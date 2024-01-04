@@ -1,0 +1,999 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.bvlabs.ai/AO/"
+     xml:base="http://www.bvlabs.ai/AO/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://www.bvlabs.ai/AO">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omo/releases/2023-11-02/omo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000065 -->
+
+    <owl:ObjectProperty rdf:about="http://www.bvlabs.ai/AO/AO_0000000065">
+        <rdfs:label xml:lang="en">has_dimension</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000000 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000000">
+        <obo:IAO_0000115 xml:lang="en">The term anomalies in this context refers to cases, or groups of cases, that are in some way unusual and deviate from some notion of normality [1–13].</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">deviant</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">discord</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">outlier</obo:IAO_0000118>
+        <obo:IAO_0000118>novelty</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <dc:description xml:lang="en">An anomaly in this context is a case, or a group of cases, that in some way is unusual and does not fit the general patterns exhibited by the majority of the data [3, 4, 8, 10, 11, 69, 325, 326]</dc:description>
+        <dc:description xml:lang="en">An anomaly, in its broadest meaning, is something that is different or peculiar given what is usual or expected [88–90].</dc:description>
+        <dc:description xml:lang="en">In the philosophy of science, anomalies play a crucial role as observations or predictions that are inconsistent with the models in the prevailing academic
+paradigm [91–94]</dc:description>
+        <rdfs:label xml:lang="en">anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000001 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000001">
+        <obo:IAO_0000115 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <obo:IAO_0000115 xml:lang="en">Anomaly detection (AD) is the process of analyzing the data to identify these unusual occurrences.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">anomaly detection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000002 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000002">
+        <obo:IAO_0000115 xml:lang="en">The term cases refers to the individual instances in a dataset, also called data points, rows, records, or observations [57, 99, 323].</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <rdfs:label xml:lang="en">case</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000003 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000003">
+        <obo:IAO_0000115 xml:lang="en">These cases are described by one or more attributes, also referred to as variables, columns, fields, dimensions or features.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <rdfs:label xml:lang="en">attribute</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000004 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000004">
+        <obo:IAO_0000115 xml:lang="en">The term occurrence is used here in a broad fashion and may refer to an individual case or a group of cases, an object or an event, and anomalous or regular data.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <rdfs:label xml:lang="en">occurence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000005 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000005">
+        <obo:IAO_0000115 xml:lang="en">The term dependency is used in the literature to refer to two aspects of relationships, both of which are relevant for this study. First, there can be a dependency between the attributes, meaning there is a relationship between the variables [59, 96, 99–101, 182]. Income, for example, may be correlated with education and parental financial status. A second form of dependency, referred to as dependent data, deals with the relationship between the dataset’s individual cases or rows [7, 20, 57, 102, 323]. A set with such dependent cases contains an intrinsic relation between the observations. Examples are time series, spatial and graph data, and sets with hierarchical relationships. The dependencies in such datasets are typically captured by time, location, linking or grouping attributes. These inter-case relations are absent from independent data, such as in i.i.d. random samples for cross-sectional surveys, in which every row represents a stand-alone observation.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <rdfs:label xml:lang="en">dependency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000006 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000006">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000005"/>
+        <obo:IAO_0000115 xml:lang="en">A second form of dependency, referred to as dependent data, deals with the relationship between the dataset’s individual cases or rows [7, 20, 57, 102, 323]. A set with such dependent cases contains an intrinsic relation between the observations. Examples are time series, spatial and graph data, and sets with hierarchical relationships. The dependencies in such datasets are typically captured by time, location, linking or grouping attributes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">dependent data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000007 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000007">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000005"/>
+        <obo:IAO_0000115 xml:lang="en">These inter-case relations are absent from independent data, such as in i.i.d. random samples for cross-sectional surveys, in which every row represents a stand-alone observation.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">independent data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000008 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000008">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000051"/>
+        <dc:description xml:lang="en">The fourth dimension represents the data structure, which is used to distinguish between the subtypes within the nine cells of the typology. A given cell may contain multiple anomaly subtypes, which have defining characteristics that can be traced back to the specific data formats that host them, such as graphs and time series. Also note that the difference between dependent and independent data is treated as a characteristic of the data structure here. See Sect. 2.1 for an overview of the different structures.</dc:description>
+        <rdfs:label xml:lang="en">data structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000009 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000009">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000008"/>
+        <obo:IAO_0000115 xml:lang="en">Cross-sectional data consist of observations on unit instances—e.g., individual people, organizations or countries—at one point in time. The cases in such a set are generally considered to be unordered and otherwise independent, as opposed to the following structures with dependent data.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">cross-sectional data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000010 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000010">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000008"/>
+        <obo:IAO_0000115 xml:lang="en">Time series data consist of observations on one unit instance (e.g., one country) at different points in time.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">time series data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000011 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000011">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000008"/>
+        <obo:IAO_0000115 xml:lang="en">Time-oriented panel data, or longitudinal data, consist of a set of time series and are therefore comprised of observations on multiple individual entities at different points in time (e.g., income history for a sample of citizens followed over a five-year period).</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">longitudinal data</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">time-oriented panel data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000012 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000012">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000008"/>
+        <obo:IAO_0000115 xml:lang="en">The general term sequence data will be used to refer to time series, time-oriented panel data, as well as to sets with an ordering not based on time. Sequence data have broad applications and, besides time-oriented phenomena, are able to capture genomic and other biological features, user actions, spectroscopy wavelengths, trajectories, audio, and even visual information such as the shape of physical objects and moving elements in a video [5, 10, 114, 116–123, 278]</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">sequential data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000013 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000013">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000008"/>
+        <obo:IAO_0000115 xml:lang="en">This is similar to spatial data, which usually consist of a set of coordinates and a set of substantive features [8, 66, 95, 126–129, 277, 323]. The latter may pertain to, e.g., population density, settlement type or availability of utility infrastructure elements. The representations often constitute points (atomic positions such as addresses), lines, arcs (e.g., roads or rivers) and polygons (regions such as neighborhoods or states). However, a rasterization of continuous data can also be used, such as satellite imagery and brain scans represented as a grid of pixels. This format therefore also captures image material in general, with the data points being 2D pixels or 3D voxels. The coordinates represent a position on a canvas or frame, while the features store the visual information as gray intensities or color information (e.g., RGB, multi- or hyperspectral).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">spatial data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000014 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000014">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000008"/>
+        <obo:IAO_0000115 xml:lang="en">Spatio-temporal data feature a sequence dimension in addition to the coordinates and may capture, e.g., video and historical geographical information [281, 283].</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">spatio-temporal data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000015 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000015">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000059"/>
+        <obo:IAO_0000115 xml:lang="en">The concept of an aggregate is often used in the context of dealing with noise or obtaining a more abstract representation at the level of interest. When aggregating the cases the analyst is able to treat multiple individual rows as a whole or a group and consequently obtain summary statistics—e.g., means and totals—or other derived properties of the collective [5, 57, 95, 103–106, 282, 323].</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">aggregate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000016 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000016">
+        <rdfs:label xml:lang="en">anomaly type</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000017 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000017">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">extreme but genuine members of the main population</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000018 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000018">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">contaminants</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000019 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000019">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">distant outliers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000020 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000020">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">fringeliers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000021 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000021">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">white crows</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000022 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000022">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">in-disguise anomalies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000023 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000023">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">weak outlier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000024 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000024">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">strong outlier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000025 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000025">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000024"/>
+        <rdfs:label xml:lang="en">event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000026 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000026">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000024"/>
+        <rdfs:label xml:lang="en">measurement error</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000027 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000027">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">procedural error</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000028 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000028">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">extraordinary event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000029 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000029">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">extraordinary observation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000030 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000030">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">unique value combination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000031 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000031">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">point anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000032 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000032">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">contextual anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000033 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000033">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">collective anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000034 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000034">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">additive outlier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000035 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000035">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">temporary change</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000036 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000036">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">level shift</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000037 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000037">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">innovational outlier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000038 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000038">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">isolated outlier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000039 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000039">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">shift outlier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000040 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000040">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">amplitude</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000041 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000041">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">outliers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000042 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000042">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">shape outlier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000043 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000043">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">outlier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000044 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000044">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">high-leverage point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000045 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000045">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">influential point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000046 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000046">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">positional outlier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000047 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000047">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">angular outlier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000048 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000048">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">anomalous vertice</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000049 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000049">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">anomalous edge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000050 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000050">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:label xml:lang="en">anomalous subgraph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000051 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000051">
+        <rdfs:label xml:lang="en">classification dimension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000052 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000052">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000051"/>
+        <dc:description xml:lang="en">The first dimension represents the types of data involved in describing the behavior of the occurrences. This pertains to these data types of the attributes responsible for the deviant character of a given anomaly type [10, 57, 96, 97, 114, 161]</dc:description>
+        <rdfs:label xml:lang="en">datatype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000053 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000053">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000052"/>
+        <dc:description xml:lang="en">Quantitative: The variables that capture the anomalous behavior all take on numerical values. Such attributes indicate both the possession of a certain property and the degree to which the case may be characterized by it and are measured at the interval or ratio scale. This kind of data generally allows meaningful arithmetic operations, such as addition, subtraction, multiplication, division, and differentiation. Examples of such variables are temperature, age, and height, which are all continuous. Quantitative attributes can also be discrete, however, such as the amount of people in a household.</dc:description>
+        <rdfs:label xml:lang="en">quantitative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000054 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000054">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000052"/>
+        <dc:description>Qualitative: The variables that capture the anomalous behavior are all categorical in nature and thus take on values in distinct classes (codes or categories). Qualitative data indicate the presence of a property, but not the amount or degree. Examples of such variables are gender, country, color and animal species. Words in a social media stream and other symbolic information also constitute qualitative data. Identification attributes,such as unique names and ID numbers, are categorical in nature as well because they are essentially nominal (even if they are technically stored as numbers). Note that although qualitative attributes always have discrete values, there can be a meaningful order present, such as with the ordinal martial arts classes ‘lightweight,’ ‘middleweight’ and ‘heavyweight.’ However, arithmetic operations such as subtraction and multiplication are not allowed for qualitative data.</dc:description>
+        <rdfs:label xml:lang="en">qualitative</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000055 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000055">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000052"/>
+        <dc:description xml:lang="en">Mixed: The variables that capture the anomalous behavior are both quantitative and qualitative in nature. At least one attribute of each type is thus present in the set describing the anomaly type. An example is an anomaly that involves both country of birth and body length.</dc:description>
+        <rdfs:label xml:lang="en">mixed</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000056 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000056">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000051"/>
+        <dc:description xml:lang="en">The second dimension is the cardinality of relationship, which represents how the various attributes relate to each other when describing anomalous behavior. These attributes are individually or jointly responsible for the deviant character of the occurrences [39, 59, 96, 100, 105, 106, 136, 158, 285]: The cardinality of relationship essentially refers to whether one attribute is sufficient to define and detect the anomaly type or that multiple attributes need to be taken into account simultaneously. Note that, owing to the massive data collection nowadays, a dataset is likely to contain many attributes beyond the hosting subspace (i.e., the subset of attributes required to describe and detect a given anomaly). As a matter of fact, an occurrence can be deviant in one subspace and normal in others [133, 162–164, 180, 182, 303]. An occurrence could even be one type of anomaly in one subspace and another type in a second subspace.</dc:description>
+        <rdfs:label xml:lang="en">relation cardinality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000057 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000057">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000056"/>
+        <dc:description xml:lang="en">Univariate: Except for being part of the same set, no relationship between the variables exists to which the anomalous behavior of the deviant case can be attributed. To describe and detect the anomaly, its variables can therefore be referred to separately. In other words, the analysis can assume independence between the attributes.</dc:description>
+        <rdfs:label xml:lang="en">univariate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000058 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000058">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000056"/>
+        <dc:description xml:lang="en">Multivariate: The deviant behavior of the anomaly can be attributed to the relationship between its variables. The anomaly needs to be described and detected by referring to the joint distribution, meaning the individual attributes cannot be studied separately. Variables have to be analyzed jointly in order to take into account their relation, i.e., their combination of values. The term ‘relationship’ should be interpreted broadly here and includes correlations, partial correlations, interactions, collinearity, concurvity, (non)collapsibility, and associations between attributes of different data types.</dc:description>
+        <rdfs:label xml:lang="en">multivariate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000059 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000059">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000051"/>
+        <dc:description xml:lang="en">The third dimension is the anomaly level, which represents the distinction between atomic anomalies (individual low-level cases or data points) versus aggregate anomalies (groups or collective structures). In theory this is also an independent dimension, but in practice univariate data only contain atomic anomalies. Multivariate data may also host aggregate anomalies, which alongside substantive attributes typically require data management attributes (e.g.,
+time stamps or group designations) that allow the formation of collective structures. However, should future research introduce noteworthy examples of aggregate anomalies in univariate data, the framework can be easily extended to accommodate this.</dc:description>
+        <rdfs:label xml:lang="en">anomaly level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000060 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000060">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000059"/>
+        <rdfs:label xml:lang="en">atomic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000061 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000061">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000051"/>
+        <dc:description xml:lang="en">The fifth dimension is the data distribution, which refers to the collection of attribute values and their pattern or dispersion throughout the data space [98, 165]. An anomaly, per definition, is defined by its difference with regard to the remainder of the data, which makes the distribution of the dataset an important factor to take into account. The distribution is strongly dependent on the classificatory factors mentioned above, but allows focusing on density and other dispersion-related aspects of the set. It therefore offers additional descriptive and delineating capabilities.1 This dimension will not only be used to subdivide between anomaly subtypes within the typology’s nine cells, but occasionally also to illustrate how an altered distribution would result in a different manifestation of a given anomaly.</dc:description>
+        <rdfs:label xml:lang="en">data distribution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000062 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000062">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bvlabs.ai/AO/AO_0000000065"/>
+                <owl:someValuesFrom rdf:resource="http://www.bvlabs.ai/AO/AO_0000000057"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bvlabs.ai/AO/AO_0000000065"/>
+                <owl:someValuesFrom rdf:resource="http://www.bvlabs.ai/AO/AO_0000000060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Atomic univariate anomalies are single cases with a deviant value for one or possibly multiple individual attributes. They are relatively easy to describe and detect because the individual values of these observations are unusual. Relationships between attributes or cases are not relevant for such occurrences. An example is an extremely high numerical value, such as a person reported to be 246 cm high. There may be several anomalous atomic occurrences (albeit apparently not in a way so as to form a ‘normal pattern’), but the essence is that each individual case is anomalous in its own right. Moreover, should an individual case have multiple unusual values, then each of them will be anomalous (e.g., not only 246 cm high, but also 117 years old).</dc:description>
+        <rdfs:label xml:lang="en">atomic univariate anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000063 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000063">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bvlabs.ai/AO/AO_0000000065"/>
+                <owl:someValuesFrom rdf:resource="http://www.bvlabs.ai/AO/AO_0000000058"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bvlabs.ai/AO/AO_0000000065"/>
+                <owl:someValuesFrom rdf:resource="http://www.bvlabs.ai/AO/AO_0000000060"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:description xml:lang="en">Atomic multivariate anomalies are single cases whose deviant nature lies in their relationships, with the individual values not being anomalous. In independent data this will manifest itself in the unusual combination of a case’s own attribute values, such as a 10-year-old person with a body length of 180 cm. However, the multivariate nature also allows defining and detecting deviations in dependent data, i.e., in the relation with the other cases to which the</dc:description>
+        <rdfs:label xml:lang="en">atomic multivariate anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000064 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000064">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000016"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bvlabs.ai/AO/AO_0000000065"/>
+                <owl:someValuesFrom rdf:resource="http://www.bvlabs.ai/AO/AO_0000000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.bvlabs.ai/AO/AO_0000000065"/>
+                <owl:someValuesFrom rdf:resource="http://www.bvlabs.ai/AO/AO_0000000058"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">aggregate anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000066 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000066">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000062"/>
+        <rdfs:label xml:lang="en">uncommon number anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000067 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000067">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000062"/>
+        <rdfs:label xml:lang="en">uncommon class anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000068 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000068">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000062"/>
+        <rdfs:label xml:lang="en">simple mixed data anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000069 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000069">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000063"/>
+        <rdfs:label xml:lang="en">multidimensional numerical anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000070 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000070">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000063"/>
+        <rdfs:label xml:lang="en">multidimensional categorial anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000071 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000071">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000063"/>
+        <rdfs:label xml:lang="en">multidimensional mixed data anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000072 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000072">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000064"/>
+        <rdfs:label xml:lang="en">aggregate numerical anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000073 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000073">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000064"/>
+        <rdfs:label xml:lang="en">aggregate categorical anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000074 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000074">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000064"/>
+        <rdfs:label xml:lang="en">aggregate mixed data anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000075 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000075">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000066"/>
+        <owl:disjointWith rdf:resource="http://www.bvlabs.ai/AO/AO_0000000076"/>
+        <rdfs:label xml:lang="en">extreme tail value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000076 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000076">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000066"/>
+        <rdfs:label xml:lang="en">isolated intermediate value</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000077 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000077">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000067"/>
+        <owl:disjointWith rdf:resource="http://www.bvlabs.ai/AO/AO_0000000078"/>
+        <rdfs:label xml:lang="en">unusual class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000078 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000078">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000067"/>
+        <rdfs:label xml:lang="en">deviant repeater</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000079 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000079">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000068"/>
+        <owl:disjointWith rdf:resource="http://www.bvlabs.ai/AO/AO_0000000080"/>
+        <rdfs:label xml:lang="en">extreme tail uncommon class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000080 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000080">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000068"/>
+        <rdfs:label xml:lang="en">intermediate uncommon class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000081 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000081">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000069"/>
+        <rdfs:label xml:lang="en">peripheral point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000082 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000082">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000069"/>
+        <rdfs:label xml:lang="en">enclosed point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000083 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000083">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000069"/>
+        <rdfs:label xml:lang="en">local density anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000084 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000084">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000069"/>
+        <rdfs:label xml:lang="en">global density anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000085 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000085">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000069"/>
+        <rdfs:label xml:lang="en">local additive anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000086 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000086">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000069"/>
+        <rdfs:label xml:lang="en">deviant numerical spatial point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000087 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000087">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000069"/>
+        <rdfs:label xml:lang="en">deviant numerical spatio-temporal point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000088 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000088">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000070"/>
+        <rdfs:label xml:lang="en">uncommon class combination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000089 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000089">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000070"/>
+        <rdfs:label xml:lang="en">deviant categorical vertex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000090 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000090">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000070"/>
+        <rdfs:label xml:lang="en">deviant categorical edge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000062"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000063"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000064"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000066"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000067"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000068"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000069"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000070"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000071"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000072"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000073"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000081"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000082"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000083"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000084"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000085"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000086"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000087"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000088"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000089"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000090"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
