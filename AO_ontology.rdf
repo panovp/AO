@@ -53,8 +53,8 @@
         <obo:IAO_0000115 xml:lang="en">The term anomalies in this context refers to cases, or groups of cases, that are in some way unusual and deviate from some notion of normality [1–13].</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">deviant</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">discord</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">outlier</obo:IAO_0000118>
         <obo:IAO_0000118>novelty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">outlier</obo:IAO_0000118>
         <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <dc:description xml:lang="en">An anomaly in this context is a case, or a group of cases, that in some way is unusual and does not fit the general patterns exhibited by the majority of the data [3, 4, 8, 10, 11, 69, 325, 326]</dc:description>
         <dc:description xml:lang="en">An anomaly, in its broadest meaning, is something that is different or peculiar given what is usual or expected [88–90].</dc:description>
@@ -158,7 +158,7 @@ paradigm [91–94]</dc:description>
     <!-- http://www.bvlabs.ai/AO/AO_0000000010 -->
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000010">
-        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000008"/>
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000012"/>
         <obo:IAO_0000115 xml:lang="en">Time series data consist of observations on one unit instance (e.g., one country) at different points in time.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">time series data</rdfs:label>
     </owl:Class>
@@ -168,7 +168,7 @@ paradigm [91–94]</dc:description>
     <!-- http://www.bvlabs.ai/AO/AO_0000000011 -->
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000011">
-        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000008"/>
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000012"/>
         <obo:IAO_0000115 xml:lang="en">Time-oriented panel data, or longitudinal data, consist of a set of time series and are therefore comprised of observations on multiple individual entities at different points in time (e.g., income history for a sample of citizens followed over a five-year period).</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">longitudinal data</obo:IAO_0000118>
         <rdfs:label xml:lang="en">time-oriented panel data</rdfs:label>
@@ -390,6 +390,7 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000035">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
         <rdfs:label xml:lang="en">temporary change</rdfs:label>
     </owl:Class>
     
@@ -399,6 +400,7 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000036">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
         <rdfs:label xml:lang="en">level shift</rdfs:label>
     </owl:Class>
     
@@ -408,6 +410,7 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000037">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
         <rdfs:label xml:lang="en">innovational outlier</rdfs:label>
     </owl:Class>
     
@@ -931,6 +934,438 @@ time stamps or group designations) that allow the formation of collective struct
     
 
 
+    <!-- http://www.bvlabs.ai/AO/AO_0000000091 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000091">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000071"/>
+        <rdfs:label xml:lang="en">incongruous common class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000092 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000092">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000071"/>
+        <rdfs:label xml:lang="en">incongruous common sequential class</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000093 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000093">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000071"/>
+        <rdfs:label xml:lang="en">deviant vertex</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000094 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000094">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000071"/>
+        <rdfs:label xml:lang="en">deviant edge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000095 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000095">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000071"/>
+        <rdfs:label xml:lang="en">unusual vertex insertion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000096 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000096">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000071"/>
+        <rdfs:label xml:lang="en">unusual edge insertion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000097 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000097">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000071"/>
+        <rdfs:label xml:lang="en">deviant spatial point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000098 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000098">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000071"/>
+        <rdfs:label xml:lang="en">deviant spatio-temporal point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000099 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000099">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
+        <rdfs:label xml:lang="en">deviant cycle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000100 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000100">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
+        <rdfs:label xml:lang="en">trend change</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000101 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000101">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
+        <rdfs:label xml:lang="en">variation change</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000102 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000102">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
+        <rdfs:label xml:lang="en">deviant numerical spatial region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000103 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000103">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
+        <rdfs:label xml:lang="en">deviant numerical spatio-temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000104 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000104">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
+        <rdfs:label xml:lang="en">point-based aggregate anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000105 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000105">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
+        <rdfs:label xml:lang="en">distribution-based aggregate anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000106 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000106">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000073"/>
+        <rdfs:label xml:lang="en">deviant class aggregate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000107 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000107">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000073"/>
+        <rdfs:label xml:lang="en">deviant categorical subgraph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000108 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000108">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000073"/>
+        <rdfs:label xml:lang="en">reviant relational aggregate</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000109 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000109">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">class change</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000110 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000110">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">deviant class cycle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000111 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000111">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">deviant class sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000112 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000112">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">deviant sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000113 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000113">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">deviant subgraph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000114 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000114">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">appearing (sub)graph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000115 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000115">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">deviant spatial region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000116 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000116">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">deviant spatio-temporal region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000117 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000117">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">point-based mixed data aggregate anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000118 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000118">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">distribution-based mixed data aggregate anomaly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000119 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000119">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000112"/>
+        <rdfs:label xml:lang="en">deviant isolated sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000120 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000120">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000112"/>
+        <rdfs:label xml:lang="en">deviant shifted sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000121 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000121">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000112"/>
+        <rdfs:label xml:lang="en">deviant shaped sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000122 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000122">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000112"/>
+        <rdfs:label xml:lang="en">deviant amplitude sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000123 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000123">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000112"/>
+        <rdfs:label xml:lang="en">deviant trended sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000124 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000124">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000112"/>
+        <rdfs:label xml:lang="en">deviant variation sequence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000125 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000125">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">disappearing (sub)graph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000126 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000126">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">flickering (sub)graph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000127 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000127">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">merging (sub)graph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000128 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000128">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">splitting (sub)graph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000129 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000129">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">growing (sub)graph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000130 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000130">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">shrinking (sub)graph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000131 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000131">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000074"/>
+        <rdfs:label xml:lang="en">eccentric (sub)graph</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000132 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000132">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000071"/>
+        <rdfs:label xml:lang="en">unusual edge modification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000133 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000133">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000071"/>
+        <rdfs:label xml:lang="en">unusual edge removal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000134 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000134">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000071"/>
+        <rdfs:label xml:lang="en">unusual vertex modification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000135 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000135">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000071"/>
+        <rdfs:label xml:lang="en">unusual vertex removal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000136 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000136">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000008"/>
+        <rdfs:label xml:lang="en">relational data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000137 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000137">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000008"/>
+        <rdfs:label xml:lang="en">graph data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bvlabs.ai/AO/AO_0000000138 -->
+
+    <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000138">
+        <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000137"/>
+        <rdfs:label xml:lang="en">tree data</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -939,6 +1374,21 @@ time stamps or group designations) that allow the formation of collective struct
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000035"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000036"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000037"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000099"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000100"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000101"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000102"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000103"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000104"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000105"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -989,6 +1439,107 @@ time stamps or group designations) that allow the formation of collective struct
             <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000088"/>
             <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000089"/>
             <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000090"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000091"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000092"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000093"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000094"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000095"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000096"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000097"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000098"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000091"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000092"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000093"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000094"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000095"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000096"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000097"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000098"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000132"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000133"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000091"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000092"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000093"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000094"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000095"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000096"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000097"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000098"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000132"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000133"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000134"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000135"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000106"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000107"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000108"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000109"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000110"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000111"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000112"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000113"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000114"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000115"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000116"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000117"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000118"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000109"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000110"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000111"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000112"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000113"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000114"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000115"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000116"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000117"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000118"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000125"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000126"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000127"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000128"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000129"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000130"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000131"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000119"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000120"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000121"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000122"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000123"/>
+            <rdf:Description rdf:about="http://www.bvlabs.ai/AO/AO_0000000124"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
