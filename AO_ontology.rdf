@@ -120,6 +120,7 @@ paradigm [91–94]</dc:description>
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000006">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000005"/>
         <obo:IAO_0000115 xml:lang="en">A second form of dependency, referred to as dependent data, deals with the relationship between the dataset’s individual cases or rows [7, 20, 57, 102, 323]. A set with such dependent cases contains an intrinsic relation between the observations. Examples are time series, spatial and graph data, and sets with hierarchical relationships. The dependencies in such datasets are typically captured by time, location, linking or grouping attributes.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
         <rdfs:label xml:lang="en">dependent data</rdfs:label>
     </owl:Class>
     
@@ -130,6 +131,7 @@ paradigm [91–94]</dc:description>
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000007">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000005"/>
         <obo:IAO_0000115 xml:lang="en">These inter-case relations are absent from independent data, such as in i.i.d. random samples for cross-sectional surveys, in which every row represents a stand-alone observation.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
         <rdfs:label xml:lang="en">independent data</rdfs:label>
     </owl:Class>
     
@@ -139,7 +141,9 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000008">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000051"/>
-        <dc:description xml:lang="en">The fourth dimension represents the data structure, which is used to distinguish between the subtypes within the nine cells of the typology. A given cell may contain multiple anomaly subtypes, which have defining characteristics that can be traced back to the specific data formats that host them, such as graphs and time series. Also note that the difference between dependent and independent data is treated as a characteristic of the data structure here. See Sect. 2.1 for an overview of the different structures.</dc:description>
+        <obo:IAO_0000115 xml:lang="en">Dimension which represents the data structure, which is used to distinguish between the subtypes within the nine cells of the typology. Data structures are related to the formats for organizing and storing data.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
+        <dc:description xml:lang="en">The fourth dimension represents the data structure, which is used to distinguish between the subtypes within the nine cells of the typology. A given cell may contain multiple anomaly subtypes, which have defining characteristics that can be traced back to the specific data formats that host them, such as graphs and time series. Also note that the difference between dependent and independent data is treated as a characteristic of the data structure here.</dc:description>
         <rdfs:label xml:lang="en">data structure</rdfs:label>
     </owl:Class>
     
@@ -219,6 +223,8 @@ paradigm [91–94]</dc:description>
     <!-- http://www.bvlabs.ai/AO/AO_0000000016 -->
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000016">
+        <obo:IAO_0000115 xml:lang="en">The anomaly types are defned in terms of characteristics intrinsic to data, thus without any reference to external factors such as measurement errors, unknown natural events, employed algorithms, domain knowledge or arbitrary analyst decisions.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
         <rdfs:label xml:lang="en">anomaly type</rdfs:label>
     </owl:Class>
     
@@ -228,6 +234,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000017">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Random fuctuations at the tails of the focal distribution.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">extreme but genuine members of the main population</rdfs:label>
     </owl:Class>
     
@@ -237,6 +245,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000018">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Observations from a different distribution.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">contaminants</rdfs:label>
     </owl:Class>
     
@@ -246,6 +256,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000019">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Outliers which exhibit extreme values and are clearly in error.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">distant outliers</rdfs:label>
     </owl:Class>
     
@@ -255,6 +267,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000020">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Unusual but with their position about three standard deviations from the majority of the data they cannot be said to be extremely rare and unequivocally erroneous.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">fringeliers</rdfs:label>
     </owl:Class>
     
@@ -264,6 +278,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000021">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Observations that deviate so much from other observations as to arouse suspicion that it was generated by a different mechanism.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Padmanabhan, K., Chen, Z., Lakshminarasimhan, S., Ramaswamy, S.S., Richardson, B.T.: Graph-based anomaly detection. In: Samatova et al. (Eds.), Practical Graph Mining with R. CRC Press, Boca Raton (2014)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">white crows</rdfs:label>
     </owl:Class>
     
@@ -273,6 +289,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000022">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Minor deviation from the normal pattern.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Padmanabhan, K., Chen, Z., Lakshminarasimhan, S., Ramaswamy, S.S., Richardson, B.T.: Graph-based anomaly detection. In: Samatova et al. (Eds.), Practical Graph Mining with R. CRC Press, Boca Raton (2014)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">in-disguise anomalies</rdfs:label>
     </owl:Class>
     
@@ -282,6 +300,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000023">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Noise.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
         <rdfs:label xml:lang="en">weak outlier</rdfs:label>
     </owl:Class>
     
@@ -291,6 +311,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000024">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">A signifcant deviation from normal behavior.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">strong outlier</rdfs:label>
     </owl:Class>
     
@@ -300,6 +322,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000025">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000024"/>
+        <obo:IAO_0000115 xml:lang="en">Unusual changes in the real-world state.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">event</rdfs:label>
     </owl:Class>
     
@@ -309,6 +333,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000026">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000024"/>
+        <obo:IAO_0000115 xml:lang="en">An error refers to a noise-related measurement coming from a faulty sensor.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="http://dx.doi.org/10.1016/j.eij.2013.06.001"/>
         <rdfs:label xml:lang="en">measurement error</rdfs:label>
     </owl:Class>
     
@@ -318,6 +344,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000027">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Outlier arising from a procedural error, such as a data entry error or a mistake in coding.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Hair, J.F., Black, W.C., Babin, B.J., Anderson, R.E.: Multivariate Data Analysis. Seventh Ed. Pearson Prentice Hall (2010)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">procedural error</rdfs:label>
     </owl:Class>
     
@@ -327,6 +355,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000028">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">The observation that occurs as the result of an extraordinary event, which accounts for the uniqueness of the observation.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Hair, J.F., Black, W.C., Babin, B.J., Anderson, R.E.: Multivariate Data Analysis. Seventh Ed. Pearson Prentice Hall (2010)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">extraordinary event</rdfs:label>
     </owl:Class>
     
@@ -336,6 +366,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000029">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Unexplaned deviation.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">extraordinary observation</rdfs:label>
     </owl:Class>
     
@@ -345,6 +377,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000030">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Observations that fall within the ordinary range of values on each of the variables. These observations are not particularly high or low on the variables, but are unique in their combination of values across the variables.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Hair, J.F., Black, W.C., Babin, B.J., Anderson, R.E.: Multivariate Data Analysis. Seventh Ed. Pearson Prentice Hall (2010)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">unique value combination</rdfs:label>
     </owl:Class>
     
@@ -354,6 +388,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000031">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">One or several individual cases that are deviant with respect to the rest of the data.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">point anomaly</rdfs:label>
     </owl:Class>
     
@@ -363,6 +399,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000032">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Appears normal at frst, but is deviant when an explicitly selected context is taken into account [cf. 137].</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">contextual anomaly</rdfs:label>
     </owl:Class>
     
@@ -372,6 +410,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000033">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Collection of data points that belong together and, as a group, deviate from the rest of the data.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">collective anomaly</rdfs:label>
     </owl:Class>
     
@@ -381,6 +421,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000034">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Abrupt change that pertains to a single observation [21, 105, 138, 141, 193].</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">additive outlier</rdfs:label>
     </owl:Class>
     
@@ -391,6 +433,8 @@ paradigm [91–94]</dc:description>
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000035">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
+        <obo:IAO_0000115 xml:lang="en">A rise or fall of the substantive value that requires a certain period to get back to the regular level [138, 140].</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
         <rdfs:label xml:lang="en">temporary change</rdfs:label>
     </owl:Class>
     
@@ -401,6 +445,8 @@ paradigm [91–94]</dc:description>
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000036">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
+        <obo:IAO_0000115 xml:lang="en">An abrupt structural change to a higher or lower value level, i.e., a permanent step change [138, 140].</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">level shift</rdfs:label>
     </owl:Class>
     
@@ -411,6 +457,8 @@ paradigm [91–94]</dc:description>
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000037">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
+        <obo:IAO_0000115 xml:lang="en">Complex anomaly that goes beyond a temporary change and usually consists of an initial shock followed by an impact on potentially both the cycle and trend components and may be temporary or permanent in nature [21, 138-141]</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">innovational outlier</rdfs:label>
     </owl:Class>
     
@@ -420,6 +468,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000038">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Exhibit outlying behavior during a very short time interval.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s10260-015-0319-6"/>
         <rdfs:label xml:lang="en">isolated outlier</rdfs:label>
     </owl:Class>
     
@@ -429,6 +479,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000039">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">The curve of the anomalous series has a normal shape but at a diferent location.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">shift outlier</rdfs:label>
     </owl:Class>
     
@@ -438,6 +490,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000040">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">The anomalous series has a curve with the same shape has normal curves but with a different range.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">amplitude</rdfs:label>
     </owl:Class>
     
@@ -447,6 +501,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000041">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Outliers refer to numerically isolated occurrences.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">outliers</rdfs:label>
     </owl:Class>
     
@@ -456,6 +512,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000042">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">The curve of the anomalous series is positioned at the same location as other curves but showing another shape.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">shape outlier</rdfs:label>
     </owl:Class>
     
@@ -465,6 +523,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000043">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Outlier refers to a numerically isolated occurrence.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">outlier</rdfs:label>
     </owl:Class>
     
@@ -474,6 +534,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000044">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Observations that are outliers in the X-space [143].</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Chatterjee, S., Hadi, A.: Regression Analysis by Example, 4th edn. Wiley, Hoboken (2006)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">high-leverage point</rdfs:label>
     </owl:Class>
     
@@ -483,6 +545,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000045">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Its deletion, singly or in combination with others (two or three), causes substantial changes in the fitted model.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">Chatterjee, S., Hadi, A.: Regression Analysis by Example, 4th edn. Wiley, Hoboken (2006)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">influential point</rdfs:label>
     </owl:Class>
     
@@ -492,6 +556,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000046">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Anomaly with regard to the trajectories of moving entities. The positional outlier is positioned in a low-density area of the trajectory space.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">positional outlier</rdfs:label>
     </owl:Class>
     
@@ -501,6 +567,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000047">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Anomaly with regard to the trajectories of moving entities. The angular outlier has a direction different from regular trajectories.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">angular outlier</rdfs:label>
     </owl:Class>
     
@@ -510,6 +578,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000048">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Vertices featuring sustantive values that differ from their neighbors.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">anomalous vertice</rdfs:label>
     </owl:Class>
     
@@ -519,6 +589,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000049">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Anomalous connection between vertices (nodes).</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">anomalous edge</rdfs:label>
     </owl:Class>
     
@@ -528,6 +600,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000050">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
+        <obo:IAO_0000115 xml:lang="en">Unusual subset of a graph. Anomaly comprised of multiple vertices and edges.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">anomalous subgraph</rdfs:label>
     </owl:Class>
     
@@ -536,6 +610,8 @@ paradigm [91–94]</dc:description>
     <!-- http://www.bvlabs.ai/AO/AO_0000000051 -->
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000051">
+        <obo:IAO_0000115 xml:lang="en">The concept of the anomaly, including its diferent types and subtypes, is meaningfully characterized by fve fundamental dimensions of anomalies, namely data type, cardinality of relationship, anomaly level, data structure, and data distribution.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
         <rdfs:label xml:lang="en">classification dimension</rdfs:label>
     </owl:Class>
     
@@ -545,8 +621,10 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000052">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000051"/>
+        <obo:IAO_0000115 xml:lang="en">Dimension representing the types of data involved in describing the behavior of the occurrences: quantitative, qualitative or mixed.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
         <dc:description xml:lang="en">The first dimension represents the types of data involved in describing the behavior of the occurrences. This pertains to these data types of the attributes responsible for the deviant character of a given anomaly type [10, 57, 96, 97, 114, 161]</dc:description>
-        <rdfs:label xml:lang="en">datatype</rdfs:label>
+        <rdfs:label xml:lang="en">data type</rdfs:label>
     </owl:Class>
     
 
@@ -585,7 +663,9 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000056">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000051"/>
-        <dc:description xml:lang="en">The second dimension is the cardinality of relationship, which represents how the various attributes relate to each other when describing anomalous behavior. These attributes are individually or jointly responsible for the deviant character of the occurrences [39, 59, 96, 100, 105, 106, 136, 158, 285]: The cardinality of relationship essentially refers to whether one attribute is sufficient to define and detect the anomaly type or that multiple attributes need to be taken into account simultaneously. Note that, owing to the massive data collection nowadays, a dataset is likely to contain many attributes beyond the hosting subspace (i.e., the subset of attributes required to describe and detect a given anomaly). As a matter of fact, an occurrence can be deviant in one subspace and normal in others [133, 162–164, 180, 182, 303]. An occurrence could even be one type of anomaly in one subspace and another type in a second subspace.</dc:description>
+        <obo:IAO_0000115 xml:lang="en">The cardinality of relationship represents how the various attributes relate to each other when describing anomalous behavior. The cardinality is either univariate or multivariate.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
+        <dc:description xml:lang="en">The second dimension is the cardinality of relationship, which represents how the various attributes relate to each other when describing anomalous behavior. These attributes are individually or jointly responsible for the deviant character of the occurrences [39, 59, 96, 100, 105, 106, 136, 158, 285]. The cardinality of relationship essentially refers to whether one attribute is sufficient to define and detect the anomaly type or that multiple attributes need to be taken into account simultaneously. Note that, owing to the massive data collection nowadays, a dataset is likely to contain many attributes beyond the hosting subspace (i.e., the subset of attributes required to describe and detect a given anomaly). As a matter of fact, an occurrence can be deviant in one subspace and normal in others [133, 162–164, 180, 182, 303]. An occurrence could even be one type of anomaly in one subspace and another type in a second subspace.</dc:description>
         <rdfs:label xml:lang="en">relation cardinality</rdfs:label>
     </owl:Class>
     
@@ -615,6 +695,8 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000059">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000051"/>
+        <obo:IAO_0000115 xml:lang="en">Anomaly level represents the distinction between atomic anomalies (individual low-level cases or data points) versus aggregate anomalies (groups or collective structures).</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
         <dc:description xml:lang="en">The third dimension is the anomaly level, which represents the distinction between atomic anomalies (individual low-level cases or data points) versus aggregate anomalies (groups or collective structures). In theory this is also an independent dimension, but in practice univariate data only contain atomic anomalies. Multivariate data may also host aggregate anomalies, which alongside substantive attributes typically require data management attributes (e.g.,
 time stamps or group designations) that allow the formation of collective structures. However, should future research introduce noteworthy examples of aggregate anomalies in univariate data, the framework can be easily extended to accommodate this.</dc:description>
         <rdfs:label xml:lang="en">anomaly level</rdfs:label>
@@ -635,7 +717,9 @@ time stamps or group designations) that allow the formation of collective struct
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000061">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000051"/>
-        <dc:description xml:lang="en">The fifth dimension is the data distribution, which refers to the collection of attribute values and their pattern or dispersion throughout the data space [98, 165]. An anomaly, per definition, is defined by its difference with regard to the remainder of the data, which makes the distribution of the dataset an important factor to take into account. The distribution is strongly dependent on the classificatory factors mentioned above, but allows focusing on density and other dispersion-related aspects of the set. It therefore offers additional descriptive and delineating capabilities.1 This dimension will not only be used to subdivide between anomaly subtypes within the typology’s nine cells, but occasionally also to illustrate how an altered distribution would result in a different manifestation of a given anomaly.</dc:description>
+        <obo:IAO_0000115 xml:lang="en">Data distribution refers to the collection of attribute values and their pattern or dispersion throughout the data space [98, 165].</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
+        <dc:description xml:lang="en">The fifth dimension is the data distribution, which refers to the collection of attribute values and their pattern or dispersion throughout the data space [98, 165]. An anomaly, per definition, is defined by its difference with regard to the remainder of the data, which makes the distribution of the dataset an important factor to take into account. The distribution is strongly dependent on the classificatory factors mentioned above, but allows focusing on density and other dispersion-related aspects of the set. It therefore offers additional descriptive and delineating capabilities. This dimension will not only be used to subdivide between anomaly subtypes within the typology’s nine cells, but occasionally also to illustrate how an altered distribution would result in a different manifestation of a given anomaly.</dc:description>
         <rdfs:label xml:lang="en">data distribution</rdfs:label>
     </owl:Class>
     
@@ -657,6 +741,8 @@ time stamps or group designations) that allow the formation of collective struct
                 <owl:someValuesFrom rdf:resource="http://www.bvlabs.ai/AO/AO_0000000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Atomic univariate anomalies are single cases with a deviant value for one or possibly multiple individual attributes.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
         <dc:description xml:lang="en">Atomic univariate anomalies are single cases with a deviant value for one or possibly multiple individual attributes. They are relatively easy to describe and detect because the individual values of these observations are unusual. Relationships between attributes or cases are not relevant for such occurrences. An example is an extremely high numerical value, such as a person reported to be 246 cm high. There may be several anomalous atomic occurrences (albeit apparently not in a way so as to form a ‘normal pattern’), but the essence is that each individual case is anomalous in its own right. Moreover, should an individual case have multiple unusual values, then each of them will be anomalous (e.g., not only 246 cm high, but also 117 years old).</dc:description>
         <rdfs:label xml:lang="en">atomic univariate anomaly</rdfs:label>
     </owl:Class>
@@ -679,7 +765,9 @@ time stamps or group designations) that allow the formation of collective struct
                 <owl:someValuesFrom rdf:resource="http://www.bvlabs.ai/AO/AO_0000000060"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <dc:description xml:lang="en">Atomic multivariate anomalies are single cases whose deviant nature lies in their relationships, with the individual values not being anomalous. In independent data this will manifest itself in the unusual combination of a case’s own attribute values, such as a 10-year-old person with a body length of 180 cm. However, the multivariate nature also allows defining and detecting deviations in dependent data, i.e., in the relation with the other cases to which the</dc:description>
+        <obo:IAO_0000115 xml:lang="en">Atomic multivariate anomalies are single cases whose deviant nature lies in their relationships, with the individual values not being anomalous.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
+        <dc:description xml:lang="en">Atomic multivariate anomalies are single cases whose deviant nature lies in their relationships, with the individual values not being anomalous. In independent data this will manifest itself in the unusual combination of a case’s own attribute values, such as a 10-year-old person with a body length of 180 cm. However, the multivariate nature also allows defining and detecting deviations in dependent data, i.e., in the relation with the other cases to which the given case is linked.</dc:description>
         <rdfs:label xml:lang="en">atomic multivariate anomaly</rdfs:label>
     </owl:Class>
     
@@ -701,6 +789,9 @@ time stamps or group designations) that allow the formation of collective struct
                 <owl:someValuesFrom rdf:resource="http://www.bvlabs.ai/AO/AO_0000000058"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">Aggregate anomalies are groups of cases that deviate as a collective, of which the constituent cases usually are not individually anomalous.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
+        <dc:description xml:lang="en">Aggregate anomalies are groups of cases that deviate as a collective, of which the constituent cases usually are not individually anomalous. Relationships between attributes and between cases play a key role here, not only to position an occurrence in the set with dependent data, but often also to form a pre-defned or derived group. Owing to their complex and intricate nature, these nomalies are generally the most difcult to describe and detect.</dc:description>
         <rdfs:label xml:lang="en">aggregate anomaly</rdfs:label>
     </owl:Class>
     
