@@ -88,8 +88,9 @@ paradigm [91–94]</dc:description>
     <!-- http://www.bvlabs.ai/AO/AO_0000000003 -->
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000003">
-        <obo:IAO_0000115 xml:lang="en">These cases are described by one or more attributes, also referred to as variables, columns, fields, dimensions or features.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The cases (individual instances in a dataset) are described by one or more attributes, also referred to as variables, columns, fields, dimensions or features.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <dc:description xml:lang="en">The cases (individual instances in a dataset) are described by one or more attributes, also referred to as variables, columns, felds, dimensions or features. Some of these attributes will be required for data management and context, such as identifcation (ID) and time variables. In addition, the dataset will contain substantive attributes, i.e., the meaningful domainspecifc variables of interest, such as income and temperature. Measuring and recording the actual attribute values is prone to errors, the discovery of which may indeed be one of the reasons to conduct anomaly detection.</dc:description>
         <rdfs:label xml:lang="en">attribute</rdfs:label>
     </owl:Class>
     
@@ -224,7 +225,7 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000016">
         <obo:IAO_0000115 xml:lang="en">The anomaly types are defned in terms of characteristics intrinsic to data, thus without any reference to external factors such as measurement errors, unknown natural events, employed algorithms, domain knowledge or arbitrary analyst decisions.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">anomaly type</rdfs:label>
     </owl:Class>
     
@@ -301,7 +302,7 @@ paradigm [91–94]</dc:description>
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000023">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <obo:IAO_0000115 xml:lang="en">Noise.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">weak outlier</rdfs:label>
     </owl:Class>
     
@@ -323,7 +324,9 @@ paradigm [91–94]</dc:description>
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000025">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000024"/>
         <obo:IAO_0000115 xml:lang="en">Unusual changes in the real-world state.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="http://dx.doi.org/10.1016/j.eij.2013.06.001"/>
         <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <dc:description xml:lang="en">An event is defined as a particular phenomenon that changes the real-world state, e.g., forest fire, air pollution, etc. This kind of outliers usually lasts for a relatively long period of time and changes historical pattern of sensor data.</dc:description>
         <rdfs:label xml:lang="en">event</rdfs:label>
     </owl:Class>
     
@@ -335,6 +338,7 @@ paradigm [91–94]</dc:description>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000024"/>
         <obo:IAO_0000115 xml:lang="en">An error refers to a noise-related measurement coming from a faulty sensor.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="http://dx.doi.org/10.1016/j.eij.2013.06.001"/>
+        <dc:description xml:lang="en">An error refers to a noise-related measurement coming from a faulty sensor. Outliers caused by errors may occur frequently, while outliers caused by events tend to have extremely smaller probability of occurrence</dc:description>
         <rdfs:label xml:lang="en">measurement error</rdfs:label>
     </owl:Class>
     
@@ -357,6 +361,7 @@ paradigm [91–94]</dc:description>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <obo:IAO_0000115 xml:lang="en">The observation that occurs as the result of an extraordinary event, which accounts for the uniqueness of the observation.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">Hair, J.F., Black, W.C., Babin, B.J., Anderson, R.E.: Multivariate Data Analysis. Seventh Ed. Pearson Prentice Hall (2010)</obo:IAO_0000119>
+        <dc:description xml:lang="en">A class of outlier is the observation that occurs as the result of an extraordinary event, which accounts for the uniqueness of the observation. For example, assume we are tracking average daily rainfall, when we have a hurricane that lasts for several days and records extremely high rainfall levels. These rainfall levels are not comparable to anything else recorded in the normal weather patterns. If included, they will markedly change the pattern of the results.</dc:description>
         <rdfs:label xml:lang="en">extraordinary event</rdfs:label>
     </owl:Class>
     
@@ -368,6 +373,7 @@ paradigm [91–94]</dc:description>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <obo:IAO_0000115 xml:lang="en">Unexplaned deviation.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <dc:description xml:lang="en">The third class of outlier comprises extraordinary observations for which the researcher has no explanation. In these instances, a unique and markedly different profile emerges.</dc:description>
         <rdfs:label xml:lang="en">extraordinary observation</rdfs:label>
     </owl:Class>
     
@@ -401,6 +407,7 @@ paradigm [91–94]</dc:description>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <obo:IAO_0000115 xml:lang="en">Appears normal at frst, but is deviant when an explicitly selected context is taken into account [cf. 137].</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <dc:description xml:lang="en">An example is a temperature value that is only remarkably low in the context of the summer season.</dc:description>
         <rdfs:label xml:lang="en">contextual anomaly</rdfs:label>
     </owl:Class>
     
@@ -423,6 +430,7 @@ paradigm [91–94]</dc:description>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <obo:IAO_0000115 xml:lang="en">Abrupt change that pertains to a single observation [21, 105, 138, 141, 193].</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <dc:description xml:lang="en">The local additive anomaly captures anomalous observations in time series and other numerical sequences. It features a short-lived spike that deviates from the local temporal neighborhood—e.g., the current season or trend—without exhibiting globally extreme values [cf. 141, 187–189]. As such this subtype implies that the substantive and sequence attributes are acknowledged and described jointly, i.e., multivariately.</dc:description>
         <rdfs:label xml:lang="en">additive outlier</rdfs:label>
     </owl:Class>
     
@@ -434,7 +442,9 @@ paradigm [91–94]</dc:description>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
         <obo:IAO_0000115 xml:lang="en">A rise or fall of the substantive value that requires a certain period to get back to the regular level [138, 140].</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <dc:description xml:lang="en">Another subtype is the temporary change, which is a rise or fall of the substantive value that requires a certain period to get back to the regular level [138, 140]. This subtype has many practical uses, such as detecting wild fires and other ecosystem disturbances [304]. Although the initial spike can be identifed as one or several atomic extreme value anomalies, the slowly diminishing tail is also an intrinsic part of the anomaly. It renders this a collective that can only be described and detected as a combination of multiple cases and attributes. A traditional temporary change anomaly is often described 
+as abruptly starting and gradually returning to the regular level [138, 140, 315].</dc:description>
         <rdfs:label xml:lang="en">temporary change</rdfs:label>
     </owl:Class>
     
@@ -447,6 +457,7 @@ paradigm [91–94]</dc:description>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000072"/>
         <obo:IAO_0000115 xml:lang="en">An abrupt structural change to a higher or lower value level, i.e., a permanent step change [138, 140].</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <dc:description xml:lang="en">The level shift is an abrupt structural change to a higher or lower value level, i.e., a permanent step change [138, 140]. Such a shift comprises at least two consecutive data points and should therefore be regarded as a dyad or a larger group. A variation of this subtype, the ‘seasonal level shift’, implies a step change of the level of the recurring cycles or their amplitude [140, cf. 188].</dc:description>
         <rdfs:label xml:lang="en">level shift</rdfs:label>
     </owl:Class>
     
@@ -470,6 +481,7 @@ paradigm [91–94]</dc:description>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <obo:IAO_0000115 xml:lang="en">Exhibit outlying behavior during a very short time interval.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s10260-015-0319-6"/>
+        <dc:description xml:lang="en">Isolated outliers exhibit outlying behavior during a very short time interval. For univariate curves this type of outlyingness reduces to one or more spikes or peaks.</dc:description>
         <rdfs:label xml:lang="en">isolated outlier</rdfs:label>
     </owl:Class>
     
@@ -523,7 +535,7 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000043">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
-        <obo:IAO_0000115 xml:lang="en">Outlier refers to a numerically isolated occurrence.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The term outlier refers to a numerically isolated occurrence.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
         <rdfs:label xml:lang="en">outlier</rdfs:label>
     </owl:Class>
@@ -534,8 +546,9 @@ paradigm [91–94]</dc:description>
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000044">
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
-        <obo:IAO_0000115 xml:lang="en">Observations that are outliers in the X-space [143].</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Observations that are outliers in the X-space.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">Chatterjee, S., Hadi, A.: Regression Analysis by Example, 4th edn. Wiley, Hoboken (2006)</obo:IAO_0000119>
+        <dc:description xml:lang="en">Observations that are outliers in the X -space are known as high-leverage points to distinguish them from observations that are outliers in the response variable (those with large standardized residuals).</dc:description>
         <rdfs:label xml:lang="en">high-leverage point</rdfs:label>
     </owl:Class>
     
@@ -547,6 +560,7 @@ paradigm [91–94]</dc:description>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <obo:IAO_0000115 xml:lang="en">Its deletion, singly or in combination with others (two or three), causes substantial changes in the fitted model.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">Chatterjee, S., Hadi, A.: Regression Analysis by Example, 4th edn. Wiley, Hoboken (2006)</obo:IAO_0000119>
+        <dc:description xml:lang="en">A point is an influential point if its deletion, singly or in combination with others (two or three), causes substantial changes in the fitted model (estimated coefficients, fitted values, t-Tests, etc.). Deletion of any point will in general cause changes in the fit. We are interested in detecting those points whose deletion cause large changes (i.e., they exercise undue influence).</dc:description>
         <rdfs:label xml:lang="en">influential point</rdfs:label>
     </owl:Class>
     
@@ -580,6 +594,7 @@ paradigm [91–94]</dc:description>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <obo:IAO_0000115 xml:lang="en">Vertices featuring sustantive values that differ from their neighbors.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <dc:description xml:lang="en">A specifc example is a node connected by multiple edges with high weights, which may be of interest because such a vertex potentially has a high impact in the network.</dc:description>
         <rdfs:label xml:lang="en">anomalous vertice</rdfs:label>
     </owl:Class>
     
@@ -591,6 +606,7 @@ paradigm [91–94]</dc:description>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <obo:IAO_0000115 xml:lang="en">Anomalous connection between vertices (nodes).</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <dc:description xml:lang="en">An example is a link with a weight that can be considered normal in the entire graph but is relatively high or low in the local community or subgraph. In a communication network such edges may point to fake or redundant message exchanges between vertices [152].</dc:description>
         <rdfs:label xml:lang="en">anomalous edge</rdfs:label>
     </owl:Class>
     
@@ -602,6 +618,7 @@ paradigm [91–94]</dc:description>
         <rdfs:subClassOf rdf:resource="http://www.bvlabs.ai/AO/AO_0000000000"/>
         <obo:IAO_0000115 xml:lang="en">Unusual subset of a graph. Anomaly comprised of multiple vertices and edges.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-1"/>
+        <dc:description xml:lang="en">A graph dataset can host a deviant subgraph, which is an anomaly comprised of multiple vertices and edges. A specifc example is a group of linked vertices with signifcantly diferent substantive values than those observed in other parts of the graph. The anomaly can also reside in a set of domain-specifc subgraphs, which are defned by a group ID or shared property. The deviation of the subgraph may be due to unusual structural relationships, weights or attribute values.</dc:description>
         <rdfs:label xml:lang="en">anomalous subgraph</rdfs:label>
     </owl:Class>
     
@@ -610,7 +627,7 @@ paradigm [91–94]</dc:description>
     <!-- http://www.bvlabs.ai/AO/AO_0000000051 -->
 
     <owl:Class rdf:about="http://www.bvlabs.ai/AO/AO_0000000051">
-        <obo:IAO_0000115 xml:lang="en">The concept of the anomaly, including its diferent types and subtypes, is meaningfully characterized by fve fundamental dimensions of anomalies, namely data type, cardinality of relationship, anomaly level, data structure, and data distribution.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The concept of the anomaly, including its diferent types and subtypes, is meaningfully characterized by five fundamental dimensions of anomalies, namely data type, cardinality of relationship, anomaly level, data structure, and data distribution.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="https://doi.org/10.1007/s41060-021-00265-"/>
         <rdfs:label xml:lang="en">classification dimension</rdfs:label>
     </owl:Class>
